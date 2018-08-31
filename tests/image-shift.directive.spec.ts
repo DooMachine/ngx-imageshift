@@ -43,11 +43,12 @@ import { ImageShiftDirective } from '../src/directives/image-shift.directive';
       component = fixture.componentInstance;
       inputEl = fixture.debugElement.query(By.css('img'));
     });
-    it('hovering over image', () => {
+    it('should set period', () => {
       inputEl.triggerEventHandler('mouseover', null);
       fixture.detectChanges();
       inputEl.triggerEventHandler('mouseout', null);
       fixture.detectChanges();
-      expect(inputEl.nativeElement.getAttribute('src')).toBe('https://placeimg.com');
+      console.log(inputEl.nativeElement.attributes);
+      expect(inputEl.nativeElement.getAttribute('ng-reflect-period')).toBe('1000');
     });
   });
