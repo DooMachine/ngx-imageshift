@@ -1,5 +1,5 @@
 # ngx-imageshift
-[![Build Status](https://travis-ci.org/o.aslnkn/ngx-imageshift.svg?branch=master)](https://travis-ci.org/o.aslnkn/ngx-imageshift)
+[![Build Status](https://travis-ci.org/DooMachine/ngx-imageshift.svg?branch=master)](https://travis-ci.org/DooMachine/ngx-imageshift)
 
 Will updated.
 

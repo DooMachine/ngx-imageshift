@@ -29,7 +29,7 @@ import { ImageShiftDirective } from '../src/directives/image-shift.directive';
     }
   }
 
-  describe('Directive: HoverFocus', () => {
+  describe('Directive: imageShift', () => {
 
     let component: TestShiftComponent;
     let fixture: ComponentFixture<TestShiftComponent>;
@@ -42,5 +42,12 @@ import { ImageShiftDirective } from '../src/directives/image-shift.directive';
       fixture = TestBed.createComponent(TestShiftComponent);
       component = fixture.componentInstance;
       inputEl = fixture.debugElement.query(By.css('img'));
+    });
+    it('hovering over image', () => {
+      inputEl.triggerEventHandler('mouseover', null);
+      fixture.detectChanges();
+      inputEl.triggerEventHandler('mouseout', null);
+      fixture.detectChanges();
+      expect(inputEl.nativeElement.getAttribute('src')).toBe('https://placeimg.com');
     });
   });

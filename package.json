@@ -1,7 +1,7 @@
 {
     "name": "ngx-imageshift",
     "private": true,
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Change image src periodically with preloading.",
     "main": "./bundles/ngx-imageshift.umd.js",
     "module": "./fesm5/ngx-imageshift.js",
