@@ -6,7 +6,7 @@
 * Add support for inlining of templates & styles
 
 If you need to upgrade from v5 to v6, you can start from scratch or compare the following commit:
-- https://github.com/robisim74/ngx-imageshift/commit/fbbe7e7f705acce89e4f0e47f5f0043df5cd3698
+- https://github.com/o.aslnkn/ngx-imageshift/commit/fbbe7e7f705acce89e4f0e47f5f0043df5cd3698
 
 <a name="Jan 15, 2018"></a>
 ### Jan 15, 2018
@@ -30,10 +30,10 @@ and the _es5_ bundles in _esm5_ folder. If you want to upgrade to the new buildi
 - remove _scripts/map-sources.js_ file
 
 For a full comparison, see the following commit:
-- https://github.com/robisim74/ngx-imageshift/commit/2acd8a632716cfd188259488710aef015336c927
+- https://github.com/o.aslnkn/ngx-imageshift/commit/2acd8a632716cfd188259488710aef015336c927
 
 If you are still using _index.ts_, see also the following commit to rename it:
-- https://github.com/robisim74/ngx-imageshift/commit/583f79b1885d04cdeee897b2a7a2bc16a7564ea9
+- https://github.com/o.aslnkn/ngx-imageshift/commit/583f79b1885d04cdeee897b2a7a2bc16a7564ea9
 
 <a name="Oct 14, 2017"></a>
 ### Oct 14, 2017

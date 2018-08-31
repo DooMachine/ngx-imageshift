@@ -1,7 +1,4 @@
 import {
-    Directive,
-    HostListener,
-    HostBinding,
     Component, DebugElement
 } from '@angular/core';
 import {TestBed, ComponentFixture} from '@angular/core/testing';
@@ -14,13 +11,7 @@ import { ImageInfo, ImageShiftDirective } from 'public_api';
                     [images] = "imageInfos"
                     [period] = "1000"
                     [shiftOnHover]="true"
-                />
-                <img [src]="imageInfostring[0]" alt="altr" 
-                    imageShift
-                    [images] = "imageInfostring"
-                    [period] = "600"
-                    [loop]= "true"
-                    [shiftOnHover]="true"
+                    [preloadImages]="true"
                 />` 
   })
   class TestShiftComponent {
@@ -50,6 +41,6 @@ import { ImageInfo, ImageShiftDirective } from 'public_api';
       });
       fixture = TestBed.createComponent(TestShiftComponent); 
       component = fixture.componentInstance;
-      inputEl = fixture.debugElement.query(By.css('input'));
+      inputEl = fixture.debugElement.query(By.css('img'));
     });
   });
